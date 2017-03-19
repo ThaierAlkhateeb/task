@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>The Task</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="js/jquery.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(function() {
+                $(".selector").datepicker({
+                    dateFormat: "yy-mm-dd"
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="page-wrap">
+            <div class="header">
+                <input type="text" id="username" placeholder="username" />
+                <input type="password" id="password" placeholder="password" />
+                <button id="btnLogin">login</button>
+                <div id="logout">
+                    <input type="text" id="token" placeholder="token" />
+                    <button id="btnLogout">logout</button>
+                </div>
+
+            </div>
+            <div>
+                <br />
+                <button id="btnCsv"><a href="http://localhost/task/api/upload">upload csv tracked time</a></button>
+            </div>
+            <div>   <h2>Billable hours</h2>
+                <input type="text" id="proId" placeholder="project id" />
+                <button id="btnProject">get billable hours</button>
+            </div>
+            <div>   <h2>Peak Time</h2>
+                <input type="text" id="day" class="selector" placeholder="the day" />
+                <input type="text" id="projectId" placeholder="project id" />
+                <button id="btnPeak">get peak time</button>
+            </div>
+            <center>
+                <textarea id="output"></textarea>
+            </center>
+
+
+            <script src="js/main.js"></script>
+        </div>
+    </body>
+</html>

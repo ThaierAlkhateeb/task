@@ -1,0 +1,50 @@
+* {
+    font-size: 16px;
+}
+#page-wrap {
+    width: 978px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 5px;
+}
+
+#rightArea {
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    bottom: 20px;
+    width: 260px;
+    border:solid 1px #CCCCCC;
+    overflow-y: scroll;
+}
+
+
+
+input, textarea {
+    border:1px solid #ccc;
+    min-height:30px;
+    outline: none;
+}
+
+
+textarea {
+    margin-bottom:15px;
+    margin-top:5px;
+    height: 300px;
+    width:100%;
+}
+
+label {
+    display:block;
+}
+
+button {
+    padding:6px;
+}
+#logout{
+    display: inline-block;
+    margin-left: 134px;
+}
