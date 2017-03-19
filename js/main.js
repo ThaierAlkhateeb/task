@@ -16,6 +16,12 @@ $('#btnPeak').click(function() {
     getPeakTime($('#day').val(), $('#projectId').val());
     return false;
 });
+btnCsv
+$('#btnCsv').click(function(event) {
+     event.preventDefault(); 
+    var url = rootUrl+"/upload";
+    location.replace(url);
+});
 
 function login(username, password) {
     var dataString = "username=" + username + "&password=" + password;
