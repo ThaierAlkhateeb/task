@@ -27,8 +27,8 @@ install
 
       file format : employee_id , project_id , login_time , logout_time
 
-
-To login<br />
+To login username= user / password= 123
+<br />
 <p align="center">
   <img src="https://raw.githubusercontent.com/ThaierAlkhateeb/task/master/description_pic/login.png"/>
   </p>
