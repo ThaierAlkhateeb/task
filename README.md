@@ -45,6 +45,7 @@ The billabl hours for a project<br />
 </p>
 
 The peak hour for a project in a specific day<br />
+in this example : the peak hour for the project_id=1 and the day=2017-03-18 is (17:00 hour)
 
 <p align="center">)
   <img src="https://raw.githubusercontent.com/ThaierAlkhateeb/task/master/description_pic/peak_hour.PNG"/>
