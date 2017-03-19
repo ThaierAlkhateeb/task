@@ -67,12 +67,7 @@ $app->get('/upload', function () use ($app) {
 
 $app->post('/upload', function () use ($app, $db) {
 
-    if (!isset($_FILES['csv'])) {
-
-        echo "No file uploaded!! <br /><a href=''>Reupload</a>";
-        return;
-    }
-    if ($_FILES['csv']['error'] === 0) {
+       if ($_FILES['csv']['error'] === 0) {
         $name = uniqid('csv-' . date('Ymd') . '-');
         $ext = pathinfo($_FILES['csv']['name'], PATHINFO_EXTENSION);
         if (move_uploaded_file($_FILES['csv']['tmp_name'], 'uploads/' . $name . '.' . $ext) === true) {
@@ -81,9 +76,12 @@ $app->post('/upload', function () use ($app, $db) {
                 $db->printCsv($csv);
                 $db->saveCsv($csv);
             } else {
-                echo "File not supported";
+                echo "File not supported <br /><a href=''>Reupload</a>";
             }
         }
+    }else{
+        echo "No file uploaded!! <br /><a href=''>Reupload</a>";
+        return;
     }
 });
 
